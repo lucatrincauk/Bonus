@@ -107,6 +107,42 @@
       "target": "Min",
       "rating": "Good",
       "score": 11.2
+    },
+    {
+      "level": "C",
+      "target": "Min",
+      "rating": "Progressing",
+      "score": 0
+    },
+    {
+      "level": "D",
+      "target": "Min",
+      "rating": "Progressing",
+      "score": 0
+    },
+    {
+      "level": "E",
+      "target": "Min",
+      "rating": "Progressing",
+      "score": 0
+    },
+    {
+      "level": "C",
+      "target": "Max",
+      "rating": "Progressing",
+      "score": 0
+    },
+    {
+      "level": "D",
+      "target": "Max",
+      "rating": "Progressing",
+      "score": 0
+    },
+    {
+      "level": "E",
+      "target": "Max",
+      "rating": "Progressing",
+      "score": 0
     }
   ],
   "targets": [
@@ -121,6 +157,7 @@
   "ratings": [
     "Exceptional",
     "High Performance",
-    "Good"
+    "Good",
+    "Progressing"
   ]
 }

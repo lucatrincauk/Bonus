@@ -45,11 +45,14 @@
 
     <tbody>
         <tr>
-            <td ng-repeat="result in bonus.results | filter: {level: bonus.selected.level} | filter: {rating: bonus.selected.rating}">{{result.score}}%</td>
+            <td ng-repeat="result in filteredResults = (bonus.results | filter: filterResult(bonus.selected.rating, bonus.selected.level))">
+            {{result.score}}%</td>
         </tr>
 
         <tr ng-show="bonus.selected.salary">
-          <td ng-repeat="result in bonus.results | filter: {level: bonus.selected.level} | filter: {rating: bonus.selected.rating}">  {{bonus.selected.salary * result.score / 100 | currency:"£"}}</td>
+          <td ng-repeat="result in filteredResults">
+            {{result.money | currency:"£"}}
+          </td>
         </tr>
 
     
