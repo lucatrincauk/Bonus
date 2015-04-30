@@ -153,6 +153,9 @@ a.pure-button-primary {
     margin-top: 100px;
 }
 
+.splash.home {
+    margin-top:200px;
+}
 /* This is the main heading that appears on the blue section */
 .splash-head {
     font-size: 20px;
@@ -173,7 +176,7 @@ a.pure-button-primary {
     opacity: 0.8;
 }
 .splash-subhead.secondary {
-    text-transform: capitalize;
+    text-transform: none;
       font-weight: 300;
   font-size: .9em;
 }
@@ -223,6 +226,9 @@ a.pure-button-primary {
 /* This is the class used for the footer */
 .footer {
     background: #111;
+      position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /*
