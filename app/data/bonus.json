@@ -71,6 +71,42 @@
       "target": "Min",
       "rating": "Good",
       "score": 4.2
+    },
+        {
+      "level": "E",
+      "target": "Max",
+      "rating": "Exceptional",
+      "score": 80
+    },
+    {
+      "level": "E",
+      "target": "Max",
+      "rating": "High Performance",
+      "score": 72
+    },
+    {
+      "level": "E",
+      "target": "Max",
+      "rating": "Good",
+      "score": 28
+    },
+    {
+      "level": "E",
+      "target": "Min",
+      "rating": "Exceptional",
+      "score": 32
+    },
+    {
+      "level": "E",
+      "target": "Min",
+      "rating": "High Performance",
+      "score": 28.8
+    },
+    {
+      "level": "E",
+      "target": "Min",
+      "rating": "Good",
+      "score": 11.2
     }
   ],
   "targets": [
@@ -79,7 +115,8 @@
   ],
   "levels": [
     "C",
-    "D"
+    "D",
+    "E"
   ],
   "ratings": [
     "Exceptional",
