@@ -1,0 +1,53 @@
+ <div class="splash pure-form">
+ <section>
+    <p class="splash-subhead">M&S Target Hit</p>
+    <p class="splash-subhead secondary">If M&S didn't hit the minimum target, but your local department did, select Min</p>
+    <p>
+      <select ng-model="bonus.selected.target">
+        <option value="" disabled selected>Choose your option</option>
+        <option ng-repeat="target in bonus.targets" value="{{target}}">{{target}}</option>
+      </select>
+    </p>
+  </section>
+
+ <section ng-show="bonus.selected.target">
+    <p class="splash-subhead">Your Reward Level</p>
+    <p class="splash-subhead secondary">You will find this on your contract.</p>
+
+    <p>
+      <select ng-model="bonus.selected.level">
+      <option value="" disabled selected>Choose your option</option>
+      <option ng-repeat="level in bonus.levels" value="{{level}}">{{level}}</option>
+    </select>
+    </p>
+  </section>
+
+ <section ng-show="bonus.selected.target && bonus.selected.level">
+    <p class="splash-subhead">Your Performance Rating</p>
+    <p class="splash-subhead secondary">Given to you in the last financial year.</p>
+
+    <p>
+      <select ng-model="bonus.selected.rating">
+      <option value="" disabled selected>Choose your option</option>
+      <option ng-repeat="rating in bonus.ratings" value="{{rating}}">{{rating}}</option>
+    </select>
+    </p>
+  </section>
+
+  <section ng-show="bonus.selected.target && bonus.selected.level && bonus.selected.rating">
+    <p class="splash-subhead">Your Yearly Salary</p>
+    <p class="splash-subhead secondary">Not inclusive of location premium.</p>
+
+    <p>
+      <input ng-model="bonus.selected.salary">
+    </select>
+    </p>
+  </section>
+
+ <section class="splash-head" ng-show="bonus.selected.target && bonus.selected.level && bonus.selected.rating">
+    <div ng-repeat="result in bonus.results | filter: {level: bonus.selected.level} | filter: {target: bonus.selected.target} | filter: {rating: bonus.selected.rating}">{{result.score}}%
+       <div ng-show="bonus.selected.salary"><hr>
+      {{bonus.selected.salary * result.score / 100 | currency:"£"}}</div>
+    </div>
+ 
+  </section>

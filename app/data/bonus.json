@@ -1,0 +1,89 @@
+{
+  "results": [
+    {
+      "level": "C",
+      "target": "Max",
+      "rating": "Exceptional",
+      "score": 20
+    },
+    {
+      "level": "C",
+      "target": "Max",
+      "rating": "High Performance",
+      "score": 18
+    },
+    {
+      "level": "C",
+      "target": "Max",
+      "rating": "Good",
+      "score": 7
+    },
+    {
+      "level": "C",
+      "target": "Min",
+      "rating": "Exceptional",
+      "score": 8
+    },
+    {
+      "level": "C",
+      "target": "Min",
+      "rating": "High Performance",
+      "score": 7.2
+    },
+    {
+      "level": "C",
+      "target": "Min",
+      "rating": "Good",
+      "score": 2.8
+    },
+    {
+      "level": "D",
+      "target": "Max",
+      "rating": "Exceptional",
+      "score": 30
+    },
+    {
+      "level": "D",
+      "target": "Max",
+      "rating": "High Performance",
+      "score": 27
+    },
+    {
+      "level": "D",
+      "target": "Max",
+      "rating": "Good",
+      "score": 10.5
+    },
+    {
+      "level": "D",
+      "target": "Min",
+      "rating": "Exceptional",
+      "score": 12
+    },
+    {
+      "level": "D",
+      "target": "Min",
+      "rating": "High Performance",
+      "score": 10.8
+    },
+    {
+      "level": "D",
+      "target": "Min",
+      "rating": "Good",
+      "score": 4.2
+    }
+  ],
+  "targets": [
+    "Min",
+    "Max"
+  ],
+  "levels": [
+    "C",
+    "D"
+  ],
+  "ratings": [
+    "Exceptional",
+    "High Performance",
+    "Good"
+  ]
+}
