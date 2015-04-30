@@ -292,10 +292,12 @@ a.pure-button-primary {
 }
 .results-table {
     width: 100%;
-      border: 3px solid white;
+      border: 0;
+      margin-top: 50px;
 }
 .results-table th {
     width: 50%;
+    font-weight: 400;
 }
 .results-table thead {
     background: rgb(45, 62, 80);
@@ -305,8 +307,16 @@ a.pure-button-primary {
 .results-table td {
     color: white;
     font-size: 250%;
-  font-weight: 800;
+  font-weight: 300;
+  background: rgb(70, 167, 231);
 }
 .pure-table td, .pure-table th {
-  border-left: 3px solid white;
+    border-left: 1px solid #1F8DD6;
   }
+  .splash section:first-child {
+  border-top: 0;
+}
+.splash section {
+  padding: 17px 0;
+  border-top: 1px solid rgb(95, 165, 211);
+}
