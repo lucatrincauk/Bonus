@@ -164,7 +164,7 @@ a.pure-button-primary {
     padding: 1em 1.6em;
     font-weight: 100;
     border-radius: 5px;
-    line-height: 1em;
+    line-height: 1.4em;
     font-weight: 800;
 }
 
@@ -319,4 +319,9 @@ a.pure-button-primary {
 .splash section {
   padding: 17px 0;
   border-top: 1px solid rgb(95, 165, 211);
+}
+a.external {
+     text-decoration: none;
+  color: rgb(45, 62, 80);
+  font-weight: 400;
 }
