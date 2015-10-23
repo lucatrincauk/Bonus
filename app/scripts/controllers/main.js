@@ -10,20 +10,26 @@
 angular.module('bonusApp')
 	.controller('MainCtrl', function($scope, $http) {
 
-		$http.get('data/bonus.json')
+	$http.get('data/bonus.json')
 			.success(function(data) {
 				$scope.bonus = data;
-						$scope.bonus.selected = {};
+				$scope.selected = {};
 
 			})
 			.error(function(status) {
 				console.log(status);
 			});
 
+			$scope.calculateMoney = function(salary, score) {
+				return salary * score / 100;
+			}
+
 		$scope.filterResult = function(rating, level) {
 			return function(result) {
-				result.money = $scope.bonus.selected.salary * result.score / 100;
+				result.money = $scope.calculateMoney($scope.selected.salary, result.score);
 				return (level === undefined || level.length === 0 || result.level === level) && (rating === undefined || rating.length === 0 || result.rating === rating);
 			};
 		};
+
+
 	});

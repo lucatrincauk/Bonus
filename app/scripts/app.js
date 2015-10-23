@@ -15,21 +15,18 @@ angular
 		'ui.router'
 	])
 	.config(function($stateProvider, $urlRouterProvider) {
-		// For any unmatched url, redirect to '/''
-		$urlRouterProvider.otherwise('/');
+  // For any unmatched url, redirect to '/''
+  $urlRouterProvider.otherwise('/');
 
-		$stateProvider
-		// app.home
-			.state('main', {
-			url: '/',
-			templateUrl: 'main.html',
+  $stateProvider
 
-
-		}).state('calculate', {
-			url: '/calculate',
-			templateUrl: 'calculate.html',
-			controller: 'MainCtrl'
-
-
-		});
-	});
+	// app.home
+  .state('main', {
+    url: '/',
+    templateUrl: 'views/main.html'
+  }).state('calculate', {
+    url: '/calculate',
+    templateUrl: 'views/calculate.html',
+    controller: 'MainCtrl'
+  });
+});

@@ -5,37 +5,37 @@
     <p class="splash-subhead secondary">You will find this on your contract.</p>
 
     <p>
-      <select ng-model="bonus.selected.level">
+      <select ng-model="selected.level">
       <option value="" disabled selected>Choose your option</option>
       <option ng-repeat="level in bonus.levels" value="{{level}}">{{level}}</option>
     </select>
     </p>
   </section>
 
- <section ng-show="bonus.selected.level">
+ <section ng-show="selected.level">
     <p class="splash-subhead">Your Performance Rating</p>
     <p class="splash-subhead secondary">Given to you in the last financial year.</p>
 
     <p>
-      <select ng-model="bonus.selected.rating">
+      <select ng-model="selected.rating">
       <option value="" disabled selected>Choose your option</option>
       <option ng-repeat="rating in bonus.ratings" value="{{rating}}">{{rating}}</option>
     </select>
     </p>
   </section>
 
-  <section ng-show="bonus.selected.level && bonus.selected.rating">
+  <section ng-show="selected.level && selected.rating">
     <p class="splash-subhead">Your Yearly Salary</p>
     <p class="splash-subhead secondary">Not inclusive of location premium.</p>
 
     <p>
-      <input ng-model="bonus.selected.salary" ng-model-options="{debounce: 300}">
+      <input ng-model="selected.salary" ng-model-options="{debounce: 300}">
     </select>
     </p>
   </section>
 
- 
-<table class="pure-table results-table" ng-show="bonus.selected.level && bonus.selected.rating">
+
+<table class="pure-table results-table" ng-if="selected.level && selected.rating">
     <thead>
         <tr>
             <th>Maximum Target</th>
@@ -45,16 +45,16 @@
 
     <tbody>
         <tr>
-            <td ng-repeat="result in filteredResults = (bonus.results | filter: filterResult(bonus.selected.rating, bonus.selected.level))">
+            <td ng-repeat="result in filteredResults = (bonus.results | filter: filterResult(selected.rating, selected.level))">
             {{result.score}}%</td>
         </tr>
 
-        <tr ng-show="bonus.selected.salary">
+        <tr ng-show="selected.salary">
           <td ng-repeat="result in filteredResults">
             {{result.money | currency:"£"}}
           </td>
         </tr>
 
-    
+
     </tbody>
 </table>
