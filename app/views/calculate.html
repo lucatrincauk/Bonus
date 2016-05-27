@@ -5,10 +5,16 @@
     <p class="splash-subhead secondary">You will find this on your contract.</p>
 
     <p>
-      <select ng-model="selected.level">
-      <option value="" disabled selected>Choose your option</option>
-      <option ng-repeat="level in bonus.levels" value="{{level}}">{{level}}</option>
-    </select>
+
+    <ul class="switch-field switch-field-horizontal">
+      <li class="inner" ng-repeat="level in bonus.levels">
+        <input ng-model="selected.level" type="radio" id="{{level}}" name="level" value="{{level}}" checked/>
+        <label for="{{level}}">{{level}}</label>
+      </li>
+    </ul>
+
+
+
     </p>
   </section>
 
@@ -17,20 +23,24 @@
     <p class="splash-subhead secondary">For the Year 2015/2016.</p>
 
     <p>
-      <select ng-model="selected.rating">
-      <option value="" disabled selected>Choose your option</option>
-      <option ng-repeat="rating in bonus.ratings" value="{{rating}}">{{rating}}</option>
-    </select>
+
+      <ul class="switch-field switch-field-vertical">
+        <li class="inner" ng-repeat="rating in bonus.ratings">
+          <input ng-model="selected.rating" type="radio" id="{{rating}}" name="rating" value="{{rating}}" checked/>
+          <label for="{{rating}}">{{rating}}</label>
+        </li>
+      </ul>
+
+
     </p>
   </section>
 
   <section ng-show="selected.level && selected.rating">
     <p class="splash-subhead">BASE Salary</p>
-    <p class="splash-subhead secondary">Not inclusive of location premium, car allowance and other bonuses.</p>
+    <p class="splash-subhead secondary">Not inclusive of location premium, car allowance and other premiums.</p>
 
     <p>
       <input ng-model="selected.salary" ng-model-options="{debounce: 300}">
-    </select>
     </p>
   </section>
 

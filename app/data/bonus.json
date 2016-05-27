@@ -36,24 +36,6 @@
       "rating": "Good",
       "score": 3.1
     },
-        {
-      "level": "E",
-      "target": "Max",
-      "rating": "Exceptional",
-      "score": 80
-    },
-    {
-      "level": "E",
-      "target": "Max",
-      "rating": "High Performance",
-      "score": 72
-    },
-    {
-      "level": "E",
-      "target": "Max",
-      "rating": "Good",
-      "score": 28
-    },
     {
       "level": "E",
       "target": "Min",
