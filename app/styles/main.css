@@ -176,7 +176,6 @@ a.pure-button-primary {
 }
 .splash-subhead.secondary {
     text-transform: none;
-      font-weight: 300;
   font-size: .9em;
 }
 
@@ -307,7 +306,6 @@ a.pure-button-primary {
 .results-table td {
     color: white;
     font-size: 250%;
-  font-weight: 300;
   background: rgb(70, 167, 231);
 }
 .pure-table td, .pure-table th {
