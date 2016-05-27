@@ -2,75 +2,39 @@
   "results": [
     {
       "level": "C",
-      "target": "Max",
-      "rating": "Exceptional",
-      "score": 20
-    },
-    {
-      "level": "C",
-      "target": "Max",
-      "rating": "High Performance",
-      "score": 18
-    },
-    {
-      "level": "C",
-      "target": "Max",
-      "rating": "Good",
-      "score": 7
-    },
-    {
-      "level": "C",
       "target": "Min",
       "rating": "Exceptional",
-      "score": 8
+      "score": 5.8
     },
     {
       "level": "C",
       "target": "Min",
       "rating": "High Performance",
-      "score": 7.2
+      "score": 5.2
     },
     {
       "level": "C",
       "target": "Min",
       "rating": "Good",
-      "score": 2.8
-    },
-    {
-      "level": "D",
-      "target": "Max",
-      "rating": "Exceptional",
-      "score": 30
-    },
-    {
-      "level": "D",
-      "target": "Max",
-      "rating": "High Performance",
-      "score": 27
-    },
-    {
-      "level": "D",
-      "target": "Max",
-      "rating": "Good",
-      "score": 10.5
+      "score": 2
     },
     {
       "level": "D",
       "target": "Min",
       "rating": "Exceptional",
-      "score": 12
+      "score": 8.7
     },
     {
       "level": "D",
       "target": "Min",
       "rating": "High Performance",
-      "score": 10.8
+      "score": 7.8
     },
     {
       "level": "D",
       "target": "Min",
       "rating": "Good",
-      "score": 4.2
+      "score": 3.1
     },
         {
       "level": "E",
@@ -94,19 +58,19 @@
       "level": "E",
       "target": "Min",
       "rating": "Exceptional",
-      "score": 32
+      "score": 23.3
     },
     {
       "level": "E",
       "target": "Min",
       "rating": "High Performance",
-      "score": 28.8
+      "score": 20.9
     },
     {
       "level": "E",
       "target": "Min",
       "rating": "Good",
-      "score": 11.2
+      "score": 8.1
     },
     {
       "level": "C",
@@ -123,31 +87,12 @@
     {
       "level": "E",
       "target": "Min",
-      "rating": "Progressing",
-      "score": 0
-    },
-    {
-      "level": "C",
-      "target": "Max",
-      "rating": "Progressing",
-      "score": 0
-    },
-    {
-      "level": "D",
-      "target": "Max",
-      "rating": "Progressing",
-      "score": 0
-    },
-    {
-      "level": "E",
-      "target": "Max",
       "rating": "Progressing",
       "score": 0
     }
   ],
   "targets": [
-    "Min",
-    "Max"
+    "Min"
   ],
   "levels": [
     "C",

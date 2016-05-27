@@ -26,6 +26,7 @@ angular.module('bonusApp')
 
 		$scope.filterResult = function(rating, level) {
 			return function(result) {
+				console.log(result)
 				result.money = $scope.calculateMoney($scope.selected.salary, result.score);
 				return (level === undefined || level.length === 0 || result.level === level) && (rating === undefined || rating.length === 0 || result.rating === rating);
 			};

@@ -1,7 +1,7 @@
  <div class="splash pure-form">
 
  <section>
-    <p class="splash-subhead">Your Reward Level</p>
+    <p class="splash-subhead">Reward Level</p>
     <p class="splash-subhead secondary">You will find this on your contract.</p>
 
     <p>
@@ -13,8 +13,8 @@
   </section>
 
  <section ng-show="selected.level">
-    <p class="splash-subhead">Your Performance Rating</p>
-    <p class="splash-subhead secondary">Given to you in the last financial year.</p>
+    <p class="splash-subhead">Performance Rating</p>
+    <p class="splash-subhead secondary">For the Year 2015/2016.</p>
 
     <p>
       <select ng-model="selected.rating">
@@ -25,8 +25,8 @@
   </section>
 
   <section ng-show="selected.level && selected.rating">
-    <p class="splash-subhead">Your Yearly Salary</p>
-    <p class="splash-subhead secondary">Not inclusive of location premium.</p>
+    <p class="splash-subhead">BASE Salary</p>
+    <p class="splash-subhead secondary">Not inclusive of location premium, car allowance and other bonuses.</p>
 
     <p>
       <input ng-model="selected.salary" ng-model-options="{debounce: 300}">
@@ -38,8 +38,7 @@
 <table class="pure-table results-table" ng-if="selected.level && selected.rating">
     <thead>
         <tr>
-            <th>Maximum Target</th>
-            <th>Min / Local Target</th>
+            <th>Your Bonus will be</th>
         </tr>
     </thead>
 
