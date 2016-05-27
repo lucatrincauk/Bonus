@@ -293,7 +293,7 @@ a.pure-button-primary {
 .results-table {
     width: 100%;
       border: 0;
-      margin-top: 50px;
+      margin-top: 25px;
 }
 .results-table th {
     width: 50%;
@@ -341,6 +341,17 @@ https://codepen.io/JiveDig/pen/jbdJXR
 
 .switch-field-vertical {
   width: 300px;
+}
+
+@media screen and (max-width: 375px) {
+  .splash {
+    margin-top: 50px;
+  }
+
+  .switch-field-vertical,
+  .pure-form input {
+    width: 250px;
+  }
 }
 
 

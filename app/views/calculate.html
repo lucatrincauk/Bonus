@@ -44,18 +44,18 @@
     </p>
   </section>
 
-
-<table class="pure-table results-table" ng-if="selected.level && selected.rating">
+<section>
+  <table class="pure-table results-table" ng-if="selected.level && selected.rating">
     <thead>
-        <tr>
-            <th>Your Bonus will be</th>
-        </tr>
+      <tr>
+        <th>Your Bonus will be</th>
+      </tr>
     </thead>
 
     <tbody>
-        <tr>
-            <td ng-repeat="result in filteredResults = (bonus.results | filter: filterResult(selected.rating, selected.level))">
-            {{result.score}}%</td>
+      <tr>
+        <td ng-repeat="result in filteredResults = (bonus.results | filter: filterResult(selected.rating, selected.level))">
+          {{result.score}}%</td>
         </tr>
 
         <tr ng-show="selected.salary">
@@ -65,5 +65,7 @@
         </tr>
 
 
-    </tbody>
-</table>
+      </tbody>
+    </table>
+  
+</section>
