@@ -326,7 +326,9 @@ a.external {
   font-weight: 400;
 }
 
-
+/*
+https://codepen.io/JiveDig/pen/jbdJXR
+*/
 .switch-field {
   overflow: hidden;
   padding: 0;
@@ -353,8 +355,8 @@ a.external {
 .switch-field label {
   display: inline-block;
   width: 60px;
-  background-color: #e4e4e4;
-  color: rgba(0, 0, 0, 0.6);
+  background-color: white;
+  color: #2d3e50;
   font-size: 14px;
   font-weight: normal;
   text-align: center;
@@ -379,7 +381,8 @@ a.external {
 }
 
 .switch-field input:checked + label {
-  background-color: #A5DC86;
+  background-color: #2d3e50;
+  color: white;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
