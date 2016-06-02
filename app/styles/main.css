@@ -342,13 +342,17 @@ https://codepen.io/JiveDig/pen/jbdJXR
 }
 
 @media screen and (max-width: 375px) {
-  .splash {
-    margin-top: 50px;
+  .splash.home {
+    margin-top: 100px;
   }
 
   .switch-field-vertical,
   .pure-form input {
     width: 250px;
+  }
+
+  .footer.l-box {
+    padding: .3em;
   }
 }
 
